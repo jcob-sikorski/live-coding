@@ -6,8 +6,23 @@
 
 package main
 
-func addkeyValuePair() {
+import "fmt"
 
+// modifyMap takes a map by value.
+func modifyMap(m map[string]int) {
+	m["added_key"] = 42
 }
 
-func 
+func main() {
+	// Initializing the map
+	m := make(map[string]int)
+	m["original_key"] = 10
+
+	fmt.Println("Before:", m)
+
+	// Passing the map (by value) to the function
+	modifyMap(m)
+
+	// The map is modified in main!
+	fmt.Println("After: ", m)
+}
