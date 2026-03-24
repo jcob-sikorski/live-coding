@@ -4,5 +4,6 @@ func main() {
 	// helloWorld()
 	// scanInput()
 	// duplicate()
-	eraser()
+	// eraser()
+	append()
 }
